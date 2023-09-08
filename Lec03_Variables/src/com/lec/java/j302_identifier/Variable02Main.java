@@ -1,4 +1,4 @@
-package com.lec.java.j302_variables;
+package com.lec.java.j302_identifier;
 /*
    변수명 등 사용자가 이름을 지어준것들 --> 식별자 (identifier) 라고 함.
 
@@ -25,6 +25,34 @@ public class Variable02Main {
 
         // 평균
         System.out.println("평균 : " + ((double)total / 3));
+
+        // 변수명 바꿀때는 refactor-rename 사용하자!   fn + shift + F6
+
+        // 변수명 (식별자) 작명 제약사항.
+        // 알파벳, 숫자, _, $
+        // 숫자로 시작하면 안됨
+        // 띄어쓰기 안됨
+        // 대소문자 구분
+        // 중복 안됨.
+
+        int abc;
+
+        // int abc;
+
+        int Abc;
+
+        double year2020;
+        // double 2020year;
+
+        int myLittleToy; // 일반적으론 camel-notation 으로 작명하는게 관례
+        int my_little_toy;
+        int my_toy_;
+        int $aa;
+
+
+
+
+
     }
 
 }
